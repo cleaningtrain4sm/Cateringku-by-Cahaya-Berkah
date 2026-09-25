@@ -1,0 +1,26 @@
+{
+  "name": "Cateringku by Cahaya Berkah",
+  "short_name": "Cateringku",
+  "description": "Aplikasi manajemen pesanan catering Cahaya Berkah",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "https://lh3.googleusercontent.com/d/1D9WKC_LKHzuTpPi_5wS3XTI7mHHV5s0V=s192-c",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/d/1D9WKC_LKHzuTpPi_5wS3XTI7mHHV5s0V=s512-c",
+      "sizes": "512x512"
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/d/1D9WKC_LKHzuTpPi_5wS3XTI7mHHV5s0V=s512-c",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}

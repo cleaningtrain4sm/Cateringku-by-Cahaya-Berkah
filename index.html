@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Cateringku">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1D9WKC_LKHzuTpPi_5wS3XTI7mHHV5s0V=s180-c">
+  <title>Cateringku by Cahaya Berkah</title>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #f8fafc; }
+    #loader {
+      position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: #f8fafc; z-index: 10; color: #0f172a;
+      font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px;
+    }
+    iframe { width: 100%; height: 100%; border: 0; display: block; }
+    body.loaded #loader { display: none; }
+  </style>
+</head>
+<body>
+  <div id="loader">Memuat Cateringku...</div>
+  <iframe id="app"
+    src="https://script.google.com/macros/s/AKfycbxVhAPxpr9QcL3vGDLlbzzG-yGMg-MWoByDjO6DS74/exec"
+    allow="clipboard-read; clipboard-write"
+    title="Cateringku"></iframe>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(function(){});
+    }
+    var frame = document.getElementById('app');
+    frame.addEventListener('load', function(){ document.body.classList.add('loaded'); });
+    setTimeout(function(){ document.body.classList.add('loaded'); }, 6000);
+  </script>
+</body>
+</html>
